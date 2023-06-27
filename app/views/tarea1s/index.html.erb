@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Tarea1s</h1>
+
+<div id="tarea1s">
+  <% @tarea1s.each do |tarea1| %>
+    <%= render tarea1 %>
+    <p>
+      <%= link_to "Show this tarea1", tarea1 %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New tarea1", new_tarea1_path %>
