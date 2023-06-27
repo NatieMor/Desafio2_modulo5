@@ -1,0 +1,101 @@
+<p style="color: green"><%= notice %></p>
+<!DOCTYPE HTML>
+<!--
+	Lens by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Lens by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload-0 is-preload-1 is-preload-2">
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- Header -->
+					<header id="header">
+						<h1>Lens</h1>
+						<p>Just another fine responsive site template by <a href="http://html5up.net">HTML5 UP</a></p>
+						<ul class="icons">
+							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+							<li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+					</header>
+
+				<!-- Thumbnail -->
+        <article class="style2">
+        <span class="image">
+        <%=image_tag("foto1.jpg",  alt: "Edit Entry")%>
+        </span>
+        <a href="generic.html">
+            <h2>Lorem</h2>
+            <div class="content">
+                <p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+            </div>
+        </a>
+    </article>
+        <article class="style2">
+        <span class="image">
+        <%=image_tag("foto2.jpg",  alt: "Edit Entry")%>
+        </span>
+        <a href="generic.html">
+            <h2>Lorem</h2>
+            <div class="content">
+                <p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+            </div>
+        </a>
+    </article>
+        <article class="style2">
+        <span class="image">
+        <%=image_tag("foto3.jpg",  alt: "Edit Entry")%>
+        </span>
+        <a href="generic.html">
+            <h2>Lorem</h2>
+            <div class="content">
+                <p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+            </div>
+        </a>
+    </article>
+					</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="copyright">
+							<li>&copy; Untitled.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a>.</li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
+
+<h1>Tarea1s</h1>
+
+
+<div id="tarea1s">
+  <% @tarea1s.each do |tarea1| %>
+    <%= render tarea1 %>
+    <p>
+      <%= link_to "Show this tarea1", tarea1 %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New tarea1", new_tarea1_path %>
+
+
